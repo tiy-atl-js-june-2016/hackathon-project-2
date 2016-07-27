@@ -1,6 +1,6 @@
 ## Hackathon - Team Tim
 
-> [https://hackathon-team-brit.herokuapp.com](https://hackathon-team-brit.herokuapp.com)
+> [https://hackathon-team-tim.herokuapp.com](https://hackathon-team-tim.herokuapp.com)
 
 ## Authorization
 
