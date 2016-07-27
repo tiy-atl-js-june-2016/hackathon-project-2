@@ -1,4 +1,4 @@
-## Hackathon - Team Tim
+## Hackathon - Portfolio Builder (Team Tim)
 
 > Sign up and watch your career take off. It's raining jobs!
 
