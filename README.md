@@ -1,5 +1,13 @@
 ## Hackathon - Team Tim
 
+> Sign up and watch your career take off. It's raining jobs!
+
+- Create an account
+- Provide some Github details
+- Choose your layout
+- Add employment & education background & bio
+- Generate a shareable portfolio page
+
 > [https://hackathon-team-tim.herokuapp.com](https://hackathon-team-tim.herokuapp.com)
 
 ## Authorization
