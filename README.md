@@ -120,6 +120,23 @@ layout_choice: number
   location: 'Atlanta',
   bio: 'This is all about me',
   layout_choice: 5,
-  user: 'tbone'
+  user: 'tbone',
+  user_id: 1
 }
 ```
+
+### GET /profiles/:id
+
+***Response:***
+
+```
+{
+  github_username: 'twhitacre',
+  location: 'Atlanta',
+  bio: 'This is all about me',
+  layout_choice: 5,
+  user: 'tbone',
+  user_id: 1
+}
+```
+
