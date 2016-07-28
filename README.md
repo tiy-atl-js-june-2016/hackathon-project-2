@@ -100,3 +100,26 @@ Returns 200 on success and 401 on failure.
   "username": "tbone"
 }
 ```
+
+## Profiles
+
+### POST /profiles
+
+```
+github_username: string
+location: string
+bio: string
+layout_choice: number
+```
+
+***Response:***
+
+```
+{
+  github_username: 'twhitacre',
+  location: 'Atlanta',
+  bio: 'This is all about me',
+  layout_choice: 5,
+  user: 'tbone'
+}
+```
