@@ -11,11 +11,12 @@ class ProfilesController < ApplicationController
       user_id: current_user.id
     )
 
-    render "show.json.jbuilder"
+    render "create.json.jbuilder"
   end
 
   def show
     @profile = Profile.find_by(user_id: params["id"])
+    @user    = User.find_by(id: params["id"])
     render "show.json.jbuilder"
   end
 
