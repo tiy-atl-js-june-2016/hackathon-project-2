@@ -58,13 +58,13 @@ Returns 201 Created on Success and 422 Unprocessable Entity in case of failure.
 
 ```
 {
-  "user": {
-    "id": 35,
-    "first_name": "Tim",
-    "last_name": "Whitacre",
-    "username": "tbone",
-    "email": "tim@tim.com",
-    "access_token": "7774743beeb3c26dfdd80213ba1b9097"
+  user: {
+    id: 35,
+    first_name: "Tim",
+    last_name: "Whitacre",
+    username: "tbone",
+    email: "tim@tim.com",
+    access_token: "7774743beeb3c26dfdd80213ba1b9097"
   }
 }
 ```
@@ -87,8 +87,8 @@ Returns 200 on success and 401 on failure.
 
 ```
 {
-  "username": "tbone",
-  "password": "iheartquiteriot"
+  username: "tbone",
+  password: "iheartquiteriot"
 }
 ```
 
@@ -96,8 +96,9 @@ Returns 200 on success and 401 on failure.
 
 ```
 {
-  "access_token": "7774743beeb3c26dfdd80213ba1b9097",
-  "username": "tbone"
+  access_token: "7774743beeb3c26dfdd80213ba1b9097",
+  username: "tbone",
+  user_id: 1
 }
 ```
 
@@ -125,7 +126,7 @@ layout_choice: number
 }
 ```
 
-### GET /profiles/:id
+### GET /profiles/:user_id
 
 ***Response:***
 
