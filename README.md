@@ -104,7 +104,8 @@ Returns 200 on success and 401 on failure.
 
 ## Profiles
 
-### POST /profiles
+### POST /profiles (requires `Access-Token`)
+
 
 ```
 github_username: string
@@ -126,7 +127,7 @@ layout_choice: number
 }
 ```
 
-### GET /profiles/:user_id
+### GET /profiles/:username
 
 ***Response:***
 

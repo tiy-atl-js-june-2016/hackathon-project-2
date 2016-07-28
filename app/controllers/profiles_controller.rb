@@ -18,8 +18,8 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    @profile = Profile.find_by(user_id: params["id"])
-    @user    = User.find_by(id: params["id"])
+    @user    = User.find_by(username: params["id"])
+    @profile = Profile.find_by(user_id: @user.id)
     render "show.json.jbuilder"
   end
 
