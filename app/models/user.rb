@@ -8,6 +8,8 @@ class User < ApplicationRecord
                       message: "must have an @ symbol and period." }
   validates :access_token, presence: true
 
+  has_one :profile
+
   def ensure_access_token
     unless self.access_token
       self.access_token = User.generate_token
