@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
 
-  before_action :authenticate!, only: [:create, :edit]
+  before_action :authenticate!, only: [:create, :update]
 
   def create
     @profile = Profile.new(
@@ -8,6 +8,7 @@ class ProfilesController < ApplicationController
       location: params["location"],
       bio: params["bio"],
       layout_choice: params["layout_choice"],
+      page_title: params["page_title"],
       user_id: current_user.id
     )
     if @profile.save
@@ -23,8 +24,17 @@ class ProfilesController < ApplicationController
     render "show.json.jbuilder"
   end
 
-  def edit
+  def update
+    @profile = Profile.find_by(user_id: current_user.id)
+    @profile.update(
+      github_username: params["github_username"],
+      location: params["location"],
+      bio: params["bio"],
+      layout_choice: params["layout_choice"],
+      page_title: params["page_title"]
+    )
 
+    render "create.json.jbuilder"
   end
 
 end
