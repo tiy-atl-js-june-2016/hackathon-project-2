@@ -15,7 +15,7 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    @bill = Bill.find_by(user_id: params["id"])
+    @profile = Profile.find_by(user_id: params["id"])
     render "show.json.jbuilder"
   end
 
