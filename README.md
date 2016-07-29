@@ -162,7 +162,8 @@ This route exists 'signs a user in' and gets their info.
 
 ```
 {
-  user: [...],
+  user: [...], // shitty nested arrays 
+  user_obj: [...], // cool JS object
   repos: [...],
   orgs: [...]
 }
