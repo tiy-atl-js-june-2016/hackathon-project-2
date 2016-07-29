@@ -8,7 +8,8 @@ class GithubController < ApplicationController
 
   def index
 
-    profile = Profile.find_by(username: params['username'])
+    user = User.find_by(username: params['username'])
+    profile = Profile.find_by(user_id: user.id)
 
     @user = @github.users.get user: profile.github_username
     @repos = @github.repos.list user: profile.github_username
